@@ -8,9 +8,9 @@ If dotnet cli is not installed on your computer, install it first.
 Once dotnet cli is installed on your computer, open Command Prompt and enter the below command:
 dotnet tool install --global JetBrains.dotCover.CommandLineTools --version 2023.3.0
 
-Enter the below command in Command Prompt to configure the report:
+Enter the below command in Command Prompt to configure the report. If it fails setup an environment variable or browse to path of the dotnet-dotCover.exe file on your computer:
 
-dotnet-dotCover.exe dotnet --output=<path on computer where you would like to output the report>\AppCoverageReport.xml --ReportType=XML -- test "<path to test project on your computer>\Test.csproj"
+dotnet-dotCover.exe dotnet --output=&lt;path on computer where you would like to output the report&gt;\AppCoverageReport.xml --ReportType=XML -- test "&lt;path to test project on your computer&gt;\Test.csproj"
 
 Code coverage will be output to --output path specified in above command.
 
@@ -55,7 +55,7 @@ Code coverage will be output to --output path specified in above command.
 
 To test the DotCover CLI tool's analysis, comment out some of the tests in CodeCoverage.Tests.MathHelperTests.cs file and re-run the below command. (The CoveragePercent value in output report will be lower):
 
-dotnet-dotCover.exe dotnet --output=<path on computer where you would like to output the report>\AppCoverageReport.xml --ReportType=XML -- test "<path to test project on your computer>\Test.csproj"
+dotnet-dotCover.exe dotnet --output=&lt;path on computer where you would like to output the report&gt;\AppCoverageReport.xml --ReportType=XML -- test "&lt;path to test project on your computer&gt;\Test.csproj"
 
 These steps demonstrate the most basic usage of the tool. See DotCover docs for more features and install guide:
 
